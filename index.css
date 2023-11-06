@@ -28,6 +28,10 @@ body{
             display: flex;
             justify-content: center;    
     }
+
+    .refersh{
+    text-decoration: none;
+    }
     /* Button Styling */
     
     .button-background-move {
@@ -95,9 +99,3 @@ body{
             margin-left: 20px;
         }
       }
-.refersh{
-    text-decoration: none;
-    justify-content: right;
-    text-align: right;
-}
-    
