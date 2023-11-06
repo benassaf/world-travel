@@ -95,52 +95,9 @@ body{
             margin-left: 20px;
         }
       }
-
-    /*
-    @media (min-width: 768px) {
-      .button-background-move {
-        padding: 13px 50px 13px;
-      }
-    }
+.refersh{
+    text-decoration: none;
+    justify-content: right;
+    text-align: right;
+}
     
-    div{
-        align-content: center;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    }
-      
-      img {
-        border:solid 2px;
-        border-bottom-color:#ffe;
-        border-left-color:#eed;
-        border-right-color:#eed;
-        border-top-color:#ccb;
-        max-height:100%;
-        max-width:100%;
-        margin: 100px
-      }
-      .container {
-        height: 200px;
-        position: relative;
-    
-      }
-      
-      .center {
-       
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        box-sizing: border-box;
-      }
-      
-     .positionimage{
-     box-sizing: border-box;
-     height: 500px;    
-     }
-    
-    */
