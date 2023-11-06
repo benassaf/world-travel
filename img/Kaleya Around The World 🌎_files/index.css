@@ -1,0 +1,146 @@
+body{
+    background-color: #659DBD;
+    background-color: #F7CAC9;
+   /* background-color: #FDDCE2;*/
+    border: solid black 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 10px ;
+    }
+    
+    .all{
+    margin:50px;
+    text-align: center;
+    margin-top: 30px ;
+    
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+        text-align: center;
+        background-color: #ffe54c;
+
+    }
+
+    .center{
+            display: flex;
+            justify-content: center;    
+    }
+    /* Button Styling */
+    
+    .button-background-move {
+      margin: 10px ;
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      padding: 13px 50px 13px;
+    }
+    p{
+        margin: 10px;
+       text-align: justify;
+    }
+    img{
+        border: solid black 2px;
+        max-width:100%;
+        
+    }
+    
+    .button-background-move:after {
+      content: "";
+      background-color: #ffe54c;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+    
+    .button-background-move:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+
+    .new-game{
+    background-color: #ffe54c;
+    
+    }
+
+    @media (max-width: 600px) {
+        .all{
+            margin:30px;
+        }
+        body{
+            width: 100%;
+            border: none;
+
+        }
+        .center {
+            display:block;
+            justify-content: center;  
+        }
+        .new-game{
+            margin-left: 20px;
+        }
+      }
+
+    /*
+    @media (min-width: 768px) {
+      .button-background-move {
+        padding: 13px 50px 13px;
+      }
+    }
+    
+    div{
+        align-content: center;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    }
+      
+      img {
+        border:solid 2px;
+        border-bottom-color:#ffe;
+        border-left-color:#eed;
+        border-right-color:#eed;
+        border-top-color:#ccb;
+        max-height:100%;
+        max-width:100%;
+        margin: 100px
+      }
+      .container {
+        height: 200px;
+        position: relative;
+    
+      }
+      
+      .center {
+       
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+      }
+      
+     .positionimage{
+     box-sizing: border-box;
+     height: 500px;    
+     }
+    
+    */
