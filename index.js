@@ -5,9 +5,6 @@ let picOrd
 let butOrd
 function startM(){
     console.log("button clicked")
-  //  let  cardPosition = (Math.floor(Math.random() * 7))
- /*   document.getElementById("pImg").innerHTML =   `<img src="img/pos${cardPosition}.png" 
-    alt="Karma Sutra Position">`*/
     
     document.getElementById("question").textContent = "Oh yeah! I remember, this was in..."
     
@@ -17,14 +14,8 @@ function startM(){
     document.getElementById("pText").innerHTML = `The best things in life are the people we love, the places we've been, and the memories we've made along the way.`
     pickImg()
     swtichButtons()
+    document.getElementById("siOno").style.display = "none"   
     
-     
-
-
-
-    let desc= posArray[cardPosition] // takes the desc from the json files which is converted to array
-    //document.getElementById("pText").innerText = desc // change the p text from the line above 
- 
 }
 
 function swtichButtons(){
@@ -62,19 +53,25 @@ function answer(sel){
 
 function right(){
     document.getElementById("question").textContent = "That's Right!"
-   
-
-   // document.body.style.backgroundColor = '#659DBD'
-   document.body.style.backgroundColor = '#F7CAC9' //'#FDDCE2'  // change background color to rose
+    document.body.style.backgroundColor = '#659DBD'
+    document.body.style.backgroundColor = '#F7CAC9' //'#FDDCE2'  // change background color to rose
   /*  while(x=0,x<3,x++){
     document.getElementById(`but${butOrd[x]}`).style.backgroundColor = '#ffe54c'
     }*/
+    document.getElementById("siOno").textContent = `GOOD JOB! ${images[picOrd[0]]} is the correct answer`
+    document.getElementById("siOno").style.display = "block" 
+   
 }
 
 function wrong(x){
     console.log(x)
     document.getElementById("question").textContent = "Try Again!"
     document.body.style.backgroundColor = '#EC71A1'//'#8b3a4a'
+
+    document.getElementById("siOno").textContent = `mmmmh! ${images[picOrd[0]]} is not correct`
+    document.getElementById("siOno").style.display = "block" 
+
+
 }
 
 function pickThreeRandomNum(max) {
