@@ -1,6 +1,3 @@
-const posTxt = localStorage.getItem("myPos");
-const posJson = JSON.parse(posTxt)
-const posArray = Object.values(posJson)
 let buttonVal = 0
 let images = ['Jamaica','Costa Rica','Cancun','Bahamas','Miami Beach','Puerto Rico','Las Vegas','Malibu','Puerto Vallarta','Dominican Republic','Cabos','Mexico City']
 let  cardPosition = 3
